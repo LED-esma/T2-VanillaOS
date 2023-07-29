@@ -1,0 +1,2 @@
+
+d-i debian-installer/add-kernel-opts string pcie_ports=compat intel_iommu=on iommu=pt
