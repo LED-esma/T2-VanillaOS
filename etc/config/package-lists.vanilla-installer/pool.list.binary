@@ -14,3 +14,9 @@ grub-efi-amd64-bin
 grub-efi-amd64-signed
 shim
 shim-signed
+os-prober
+grub2
+laptop-detect
+net-tools
+wirless-tools
+network-manager
