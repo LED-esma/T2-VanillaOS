@@ -70,6 +70,14 @@ build () {
 #------------------#
 "
   lb build --debug --verbose
+
+
+
+  echo -e "
+#---------------------------#
+# MOVE OUTPUT TO BUILDS DIR #
+#---------------------------#
+"
           #T2 customization
         mkdir -p /etc/apt/sources.list.d
 
@@ -95,13 +103,6 @@ build () {
 
         apt-get install -y -qq -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" \
          apple-t2-audio-config 
-
-
-  echo -e "
-#---------------------------#
-# MOVE OUTPUT TO BUILDS DIR #
-#---------------------------#
-"
 
   YYYYMMDD="$(date +%Y%m%d)"
   OUTPUT_DIR="$BASE_DIR/builds/$BUILD_ARCH"
