@@ -27,10 +27,10 @@ apt-get update
 apt-get install -y live-build patch gnupg2 binutils zstd curl
 
 #T2 packages 
-sudo rm -r /usr/src/apple-bce*
-sudo rm -r /usr/src/apple-ibridge*
-sudo rm -r /var/lib/dkms/apple-bce
-sudo rm -r /var/lib/dkms/apple-ibridge
+rm -r /usr/src/apple-bce*
+rm -r /usr/src/apple-ibridge*
+rm -r /var/lib/dkms/apple-bce
+rm -r /var/lib/dkms/apple-ibridge
 
 mkdir -p /etc/apt/sources.list.d
 
