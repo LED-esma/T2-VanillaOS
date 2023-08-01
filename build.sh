@@ -26,13 +26,6 @@ echo -e "
 apt-get update
 apt-get install -y live-build patch gnupg2 binutils zstd curl
 
-#T2 packages 
-mkdir -p /etc/apt/sources.list.d
-
-curl -s --compressed "https://adityagarg8.github.io/t2-ubuntu-repo/KEY.gpg" | gpg --dearmor | tee /etc/apt/trusted.gpg.d/t2-ubuntu-repo.gpg >/dev/null
-curl -s --compressed -o /etc/apt/sources.list.d/t2.list "https://adityagarg8.github.io/t2-ubuntu-repo/t2.list"
-apt-get update 
-
 dpkg -i debs/*.deb
 
 # TODO: patched lb
