@@ -1,0 +1,10 @@
+#!/bin/sh
+
+echo >&2 "T: Configuring drivers..."WA
+
+printf 'apple-bce' >>/etc/modules-load.d/t2.conf
+
+echo >&2 "T: Installing audio configuration..."
+
+apt-get install -y -qq -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" \
+  apple-t2-audio-config
