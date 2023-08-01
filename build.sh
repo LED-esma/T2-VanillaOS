@@ -27,11 +27,6 @@ apt-get update
 apt-get install -y live-build patch gnupg2 binutils zstd curl
 
 #T2 packages 
-rm -r /usr/src/apple-bce*
-rm -r /usr/src/apple-ibridge*
-rm -r /var/lib/dkms/apple-bce
-rm -r /var/lib/dkms/apple-ibridge
-
 mkdir -p /etc/apt/sources.list.d
 
 curl -s --compressed "https://adityagarg8.github.io/t2-ubuntu-repo/KEY.gpg" | gpg --dearmor | tee /etc/apt/trusted.gpg.d/t2-ubuntu-repo.gpg >/dev/null
