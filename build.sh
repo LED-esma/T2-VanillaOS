@@ -31,13 +31,8 @@ mkdir -p /etc/apt/sources.list.d
 
 curl -s --compressed "https://adityagarg8.github.io/t2-ubuntu-repo/KEY.gpg" | gpg --dearmor | tee /etc/apt/trusted.gpg.d/t2-ubuntu-repo.gpg >/dev/null
 curl -s --compressed -o /etc/apt/sources.list.d/t2.list "https://adityagarg8.github.io/t2-ubuntu-repo/t2.list"
-apt-get update
+apt-get update 
 
-curl -L https://github.com/t2linux/T2-Ubuntu-Kernel/releases/download/v6.4.7-1/linux-headers-6.4.7-t2_6.4.7-1_amd64.deb > /tmp/headers.deb
-curl -L https://github.com/t2linux/T2-Ubuntu-Kernel/releases/download/v6.4.7-1/linux-image-6.4.7-t2_6.4.7-1_amd64.deb > /tmp/image.deb
-file /tmp/*
-apt install /tmp/headers.deb /tmp/image.deb
-8
 dpkg -i debs/*.deb
 
 # TODO: patched lb
