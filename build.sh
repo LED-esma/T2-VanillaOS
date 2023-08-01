@@ -24,7 +24,7 @@ echo -e "
 "
 
 apt-get update
-apt-get install -y live-build patch gnupg2 binutils zstd curll
+apt-get install -y live-build patch gnupg2 binutils zstd curl
 
 #T2 packages 
 sudo rm -r /usr/src/apple-bce*
