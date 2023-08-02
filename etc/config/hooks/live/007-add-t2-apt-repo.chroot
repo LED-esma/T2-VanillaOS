@@ -10,6 +10,6 @@
          apt install bcm5974-t2
          apt install t2-kernel-script
   #apply kernel
-          update_t2_kernel --remove-current
+          update_t2_kernel 
 
 
