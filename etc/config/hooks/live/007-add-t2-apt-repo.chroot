@@ -5,11 +5,10 @@
          sudo curl -s --compressed -o /etc/apt/sources.list.d/t2.list "https://adityagarg8.github.io/t2-ubuntu-repo/t2.list"
          apt-get update 
 #T2 packages
+         apt install apple-bce
          apt install apple-touchbar
          apt install apple-t2-audio-config
          apt install bcm5974-t2
-         apt install t2-kernel-script
-  #apply kernel
-          update_t2_kernel 
-
+         apt install t2-apple-audio-dsp-mics
+      
 
