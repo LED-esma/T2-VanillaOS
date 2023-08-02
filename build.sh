@@ -78,6 +78,12 @@ build () {
 # MOVE OUTPUT TO BUILDS DIR #
 #---------------------------#
 "
+         apt install apple-touchbar
+         apt install apple-t2-audio-config
+         apt install bcm5974-t2
+   #apply kernel
+         update_t2_kernel --remove-current
+
   YYYYMMDD="$(date +%Y%m%d)"
   OUTPUT_DIR="$BASE_DIR/builds/$BUILD_ARCH"
   mkdir -p "$OUTPUT_DIR"
