@@ -69,21 +69,20 @@ build () {
 # LIVE-BUILD BUILD #
 #------------------#
 "
-  lb build --debug --verbose
-
-
-
-  echo -e "
-#---------------------------#
-# MOVE OUTPUT TO BUILDS DIR #
-#---------------------------#
-"
+#T2 packages
          apt install apple-touchbar
          apt install apple-t2-audio-config
          apt install bcm5974-t2
    #apply kernel
          update_t2_kernel --remove-current
 
+  lb build --debug --verbose
+
+  echo -e "
+#---------------------------#
+# MOVE OUTPUT TO BUILDS DIR #
+#---------------------------#
+"
   YYYYMMDD="$(date +%Y%m%d)"
   OUTPUT_DIR="$BASE_DIR/builds/$BUILD_ARCH"
   mkdir -p "$OUTPUT_DIR"
