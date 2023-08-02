@@ -71,9 +71,7 @@ build () {
 "
 
   lb build --debug --verbose
-     #apply kernel
-    update_t2_kernel --remove-current
-
+  
   echo -e "
 #---------------------------#
 # MOVE OUTPUT TO BUILDS DIR #
