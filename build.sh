@@ -69,14 +69,10 @@ build () {
 # LIVE-BUILD BUILD #
 #------------------#
 "
-#T2 packages
-         apt install apple-touchbar
-         apt install apple-t2-audio-config
-         apt install bcm5974-t2
-   #apply kernel
-         update_t2_kernel --remove-current
 
   lb build --debug --verbose
+     #apply kernel
+    update_t2_kernel --remove-current
 
   echo -e "
 #---------------------------#
