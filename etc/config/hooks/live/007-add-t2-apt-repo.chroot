@@ -1,3 +1,4 @@
+#!/bin/sh
    #T2 customization
          mkdir -p /etc/apt/sources.list.d
 
