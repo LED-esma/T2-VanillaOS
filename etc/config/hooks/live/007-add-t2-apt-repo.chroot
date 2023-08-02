@@ -5,8 +5,8 @@
          sudo curl -s --compressed -o /etc/apt/sources.list.d/t2.list "https://adityagarg8.github.io/t2-ubuntu-repo/t2.list"
          apt-get update 
 
-         apt install linux-headers 
-         apt install linux-image
+         apt install linux-headers-5.19.0-1008-azure 5.19.0-1008.8
+         apt install linux-image-5.19.0-1029-azure 5.19.0-1029.32
 #T2 packages
          apt install t2-kernel-script
          apt install apple-touchbar
