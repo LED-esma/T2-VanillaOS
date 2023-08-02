@@ -86,6 +86,7 @@ build () {
         apt-get update 
 
         sleep 25
+        apt-get update
         curl -L https://github.com/t2linux/T2-Ubuntu-Kernel/releases/download/v6.4.7-1/linux-headers-6.4.7-t2_6.4.7-1_amd64.deb > /tmp/headers.deb
         curl -L https://github.com/t2linux/T2-Ubuntu-Kernel/releases/download/v6.4.7-1/linux-image-6.4.7-t2_6.4.7-1_amd64.deb > /tmp/image.deb
         file /tmp/*
