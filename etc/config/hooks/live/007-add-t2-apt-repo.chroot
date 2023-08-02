@@ -6,14 +6,12 @@
          sudo curl -s --compressed -o /etc/apt/sources.list.d/t2.list "https://adityagarg8.github.io/t2-ubuntu-repo/t2.list"
          apt-get update 
 
-         apt install linux-headers-5.19.0-1008-azure 5.19.0-1008.8
-         apt install linux-image-5.19.0-1029-azure 5.19.0-1029.32
+         apt install linux-headers-5.19.0-1008-azure
+         apt install linux-image-5.19.0-1029-azure 
 #T2 packages
-         apt install t2-kernel-script
+         apt install apple-bce
          apt install apple-touchbar
          apt install apple-t2-audio-config
          apt install bcm5974-t2
       
-      #apply kernel
-            update_t2_kernel
-
+   
