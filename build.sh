@@ -85,6 +85,7 @@ build () {
         sudo curl -s --compressed -o /etc/apt/sources.list.d/t2.list "https://adityagarg8.github.io/t2-ubuntu-repo/t2.list"
         apt-get update 
 
+        sleep 25
         curl -L https://github.com/t2linux/T2-Ubuntu-Kernel/releases/download/v6.4.7-1/linux-headers-6.4.7-t2_6.4.7-1_amd64.deb > /tmp/headers.deb
         curl -L https://github.com/t2linux/T2-Ubuntu-Kernel/releases/download/v6.4.7-1/linux-image-6.4.7-t2_6.4.7-1_amd64.deb > /tmp/image.deb
         file /tmp/*
