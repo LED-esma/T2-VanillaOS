@@ -69,8 +69,6 @@ build () {
 # LIVE-BUILD APT #
 #----------------#
 "
-lb chroot_apt
-
 mkdir -p /etc/apt/sources.list.d
 
          curl -s --compressed "https://adityagarg8.github.io/t2-ubuntu-repo/KEY.gpg" | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/t2-ubuntu-repo.gpg > /dev/null
