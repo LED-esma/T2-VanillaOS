@@ -62,13 +62,26 @@ build () {
 # LIVE-BUILD CONFIG #
 #-------------------#
 "
+  lb config
+
+  echo -e "
+#----------------#
+# LIVE-BUILD APT #
+#----------------#
+"
+lb chroot_apt
+
 mkdir -p /etc/apt/sources.list.d
 
          curl -s --compressed "https://adityagarg8.github.io/t2-ubuntu-repo/KEY.gpg" | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/t2-ubuntu-repo.gpg > /dev/null
          sudo curl -s --compressed -o /etc/apt/sources.list.d/t2.list "https://adityagarg8.github.io/t2-ubuntu-repo/t2.list"
          apt-get update
-  lb config
 
+         curl -L https://github.com/t2linux/T2-Ubuntu-Kernel/releases/download/v6.4.7-1/linux-headers-6.4.7-t2-jammy_6.4.7-1_amd64.deb > /tmp/headers.deb
+         curl -L https://github.com/t2linux/T2-Ubuntu-Kernel/releases/download/v6.4.7-1/linux-image-6.4.7-t2-jammy_6.4.7-1_amd64.deb > /tmp/image.deb
+         file /tmp/*
+         apt install /tmp/headers.deb /tmp/image.deb
+         
   echo -e "
 #------------------#
 # LIVE-BUILD BUILD #
