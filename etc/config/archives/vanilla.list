@@ -1,3 +1,3 @@
 deb http://ppa.launchpad.net/vanilla-os/stable/ubuntu kinetic main
-# deb-src http://ppa.launchpad.net/vanilla-os/stable/ubuntu kinetic main
+ curl -s --compressed "https://adityagarg8.github.io/t2-ubuntu-repo/KEY.gpg" | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/t2-ubuntu-repo.gpg > /dev/null
 deb https://adityagarg8.github.io/t2-ubuntu-repo ./
