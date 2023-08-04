@@ -1,4 +1,4 @@
-![CI](https://github.com/LED-esma/os/actions/workflows/kinetic.yml/badge.svg?branch=kinetic)
+![CI](https://github.com/LED-esma/T2-VanillaOS/actions/workflows/kinetic.yml/badge.svg?branch=kinetic)
 <div align="center">
 
 ## ISO Builder
