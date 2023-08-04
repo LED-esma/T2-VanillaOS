@@ -2,8 +2,8 @@
 
 mkdir casper || true
 mv boot/filesystem.squashfs casper/filesystem.squashfs
-mv boot/initrd.img-6.4.7-t2-jammy casper/initrd.lz
-mv boot/vmlinuz-6.4.7-t2-jammy casper/vmlinuz
+mv boot/initrd.img-6.4.8-t2-jammy casper/initrd.lz
+mv boot/vmlinuz-6.4.8-t2-jammy casper/vmlinuz
 mv boot/filesystem.packages-remove casper/filesystem.manifest-remove
 mv boot/filesystem.packages casper/filesystem.manifest
 
