@@ -1,5 +1,6 @@
 vanilla-base-meta
 vanilla-base-desktop
+linux-headers-5.19.0-21-generic
 
 switcheroo-control
 epiphany-browser
