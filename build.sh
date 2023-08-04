@@ -24,7 +24,7 @@ echo -e "
 "
 
 apt-get update
-apt-get install -y live-build patch gnupg2 binutils zstd
+apt-get install -y live-build patch gnupg2 binutils zstd curl
 dpkg -i debs/*.deb
 
 # TODO: workaround a bug in lb by increasing number of blocks for creating efi.img
