@@ -34,7 +34,7 @@ jobs:
         path: builds/
         
     - name: Create Release
-    
+    - uses: actions/checkout@v3 
     - uses: ncipollo/release-action@v1
       with:
         artifacts: "*.iso,*.md5,*.sha256"
