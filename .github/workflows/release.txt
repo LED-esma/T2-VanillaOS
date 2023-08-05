@@ -1,0 +1,18 @@
+VanillaOS shipped with T2 Kernel.
+
+[Find out if your Mac has a T2 chip.](https://everymac.com/)
+**Macbook Pro 16,4 users use the safe graphics option**
+**Follow the Ubuntu guide here**
+[T2 Linux website](https://t2linux.org)
+
+[VanillaOS help page](https://vanillaos.org/help)
+
+[T2 Ubuntu Repository](https://adityagarg8.github.io/t2-ubuntu-repo/)
+
+This is all possible thanks to the amazing work @t2linux and @Vanilla-OS.
+
+**Full Changelog**: https://github.com/LED-esma/T2-VanillaOS/commits/T2-22.10
+
+**[Download here.](https://github.com/LED-esma/T2-VanillaOS/suites/14836369786/artifacts/844833313)**
+
+[Wifi and Bluetooth](https://wiki.t2linux.org/guides/wifi-bluetooth/)
