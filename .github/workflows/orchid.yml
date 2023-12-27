@@ -7,7 +7,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/vanilla-os/pico:main
+      image: ghcr.io/led-esma/t2desktop:main
       volumes:
         - /proc:/proc
         - /:/run/host
