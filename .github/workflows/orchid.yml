@@ -1,4 +1,4 @@
-name: VanillaOS orchid
+name: T2 VanillaOS orchid
 
 on:
   workflow_dispatch:
